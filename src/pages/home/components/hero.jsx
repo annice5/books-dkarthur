@@ -30,10 +30,8 @@ const Hero = () => {
             alt="Daniel Arthur"
             className="h-[340px] w-full object-cover sm:h-[420px]"
           />
-          <p className="mt-3 text-sm text-gray-700 font-body">
-            Winner of the Golden Ink Award, 2035
-          </p>
-          <p className="font-signature absolute -bottom-7 right-8 -rotate-12 text-2xl text-gray-900 sm:right-14 sm:text-3xl">
+         
+          <p className="font-signature absolute -bottom-12 right-8 -rotate-12 text-2xl text-gray-900 sm:right-14 sm:text-3xl">
             Arthur
           </p>
         </div>
