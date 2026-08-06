@@ -29,7 +29,7 @@ const Footer = () => {
 
         <div>
           <p className="font-serif text-sm sm:text-base">Sign up for news and updates</p>
-          <p className="font-serif text-sm sm:text-base">from Daniel Arthur</p>
+          <p className="font-serif text-sm sm:text-base">from D.K. Arthur</p>
 
           <form onSubmit={handleSubscribe} className="mx-auto mt-6 max-w-xs text-left">
             <label htmlFor="footer-email" className="block text-sm">
@@ -81,7 +81,7 @@ const Footer = () => {
       </div>
 
       <div className="mt-12 border-t border-gray-600 pt-6 text-center text-sm text-gray-300 md:mt-16">
-        © 2026 by Daniel Arthur. All rights reserved
+        © 2026 by D.K. Arthur. All rights reserved
       </div>
     </footer>
   )
