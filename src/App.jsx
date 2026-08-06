@@ -1,55 +1,48 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RootLayout from "./layout/rootLayout";
-import SubAbout from "./pages/about/subAbout";
 import Home from "./pages/home";
-import SubBooks from "./pages/books/subBooks";
-import SubReviews from "./pages/reviews/subReviews";
-import UpcomingEvents from "./pages/events/upcomingEvents";
-import GetinTouch from "./pages/contacts/getinTouch";
-import LoginPage from "./pages/logIn/loginPage";
+import SubBooks from "./pages/subBooks";
+import SubReviews from "./pages/subReviews";
+import UpcomingEvents from "./pages/theDkArhturCanon";
+import GetinTouch from "./pages/getinTouch";
+import About from "./pages/about";
 
 
 function App() {
-  const router = createBrowserRouter ([
+  const router = createBrowserRouter([
     {
-      path: '/',
-      element: <RootLayout/>,
+      path: "/",
+      element: <RootLayout />,
       children: [
         {
           index: true,
-          element: <Home/>
+          element: <Home />,
+        },
+
+        {
+          path: "about",
+          element: <About/>,
+        },
+        {
+          path: "books",
+          element: <SubBooks />,
+        },
+        {
+          path: "reviews",
+          element: <SubReviews />,
+        },
+        {
+          path: "theDkArthurCanon",
+          element: <UpcomingEvents />,
+        },
+        {
+          path: "contact",
+          element: <GetinTouch />,
         },
        
-        {
-          index: 'about',
-          element: <SubAbout/>
-        },
-        {
-          index: 'books',
-          element: <SubBooks/>
-        },
-        {
-          index: 'reviews',
-          element: <SubReviews/>
-        },
-        {
-          index: 'events',
-          element: <UpcomingEvents/>
-        },
-        {
-          index: 'contact',
-          element: <GetinTouch/>
-        },
-        {
-          index: 'login',
-          element: <LoginPage/>
-        }
-      ]
-    }
-  ])
-  return (
-     <RouterProvider router = {router} />
-  )
- 
+      ],
+    },
+  ]);
+  return <RouterProvider router={router} />;
 }
-export default App
+export default App;

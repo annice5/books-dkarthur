@@ -7,18 +7,19 @@ const Hero = () => {
     <section className="grid min-h-screen grid-cols-1 md:grid-cols-2">
       <div className="flex flex-col justify-center md:justify-start bg-[#e7e7e4] px-6 py-16 pt-20 sm:px-8 md:px-16 md:pt-32">
         <h1 className="font-serif text-4xl font-bold leading-tight text-gray-900 sm:text-5xl md:text-7xl">
-          Daniel
+          D.K.
+
           <br />
           Arthur
         </h1>
         <p className="mt-6 font-body max-w-sm text-base leading-relaxed text-gray-700">
-          Author of the best-selling books The Great Forest Kingdom, The Making of the Exceptional Leader, I didnt know this was also Love and many more
+          Creator of FOGY Series, Foundations of the Great Youth-Master Edition Series
         </p>
         
          <a href="https://www.amazon.com/author/d.k.arthur"
           className="mt-8 w-fit text-sm text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors font-body"
         >
-          Buy Daniel's Books
+          D.K. Arthur Books
         </a>
       </div>
 

@@ -33,7 +33,7 @@ const LatestReleases = () => {
   return (
     <section className="bg-white px-6 py-16 sm:px-8 md:px-16 md:py-24 md:pr-32">
       <h2 className="font-serif text-3xl font-bold text-gray-900 sm:text-4xl md:text-5xl">
-        Daniel Arthur's Latest Releases
+      D.K. Arthur's Latest Releases
       </h2>
 
       <div className="mt-16 grid grid-cols-1 gap-16 sm:ml-4 md:ml-16 md:mt-20 md:grid-cols-2 md:gap-24">
