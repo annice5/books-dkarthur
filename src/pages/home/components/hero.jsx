@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="mx-auto grid min-h-screen max-w-[1600px] grid-cols-1 md:grid-cols-2">
       <Reveal className="order-2 flex flex-col justify-center bg-[#e7e7e4] px-6 py-16 pt-20 sm:px-8 md:order-1 md:justify-start md:px-16 md:pt-32 lg:px-20 xl:px-28">
         <p className="font-body text-xs uppercase tracking-[0.25em] text-gray-500 sm:text-sm">
-          The official website of
+           Welcome to The official website of
         </p>
 
         <h1 className="mt-3 font-serif text-4xl font-bold leading-tight text-gray-900 sm:text-5xl md:text-7xl lg:text-8xl">
