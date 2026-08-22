@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { NavLink } from 'react-router-dom'
 import { Menu, X } from 'lucide-react'
 import { AnimatePresence, motion } from 'framer-motion'
+import logo from '../assets/logo.jpg'
 
 const navLinks = [
   { label: 'Home', href: '/' },
@@ -13,7 +14,7 @@ const navLinks = [
 ]
 
 const linkClass = ({ isActive }) =>
-  `text-[15px] transition-colors duration-150 lg:text-base ${
+  `font-nav text-base tracking-wide [font-variant:small-caps] transition-colors duration-150 lg:text-lg ${
     isActive ? 'text-gray-400' : 'text-gray-800 hover:text-gray-500'
   }`
 
@@ -21,13 +22,14 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <header className="relative w-full bg-white">
-      <div className="flex items-center justify-center pt-6 pb-3 lg:pt-8 lg:pb-4">
-        <NavLink
-          to="/"
-          className="font-serif text-3xl font-bold tracking-tight text-gray-900 lg:text-4xl"
-        >
-          D.K. Arthur
+    <header className="fixed inset-x-0 top-0 z-50 w-full bg-white">
+      <div className="flex items-center justify-center pt-4 pb-2 lg:pt-5 lg:pb-3">
+        <NavLink to="/" aria-label="D.K. Arthur — Home">
+          <img
+            src={logo}
+            alt="D.K. Arthur"
+            className="h-10 w-auto object-contain sm:h-12 lg:h-14"
+          />
         </NavLink>
 
         {/* Hamburger — mobile only */}
@@ -63,7 +65,7 @@ const Navbar = () => {
             animate={{ height: 'auto', opacity: 1 }}
             exit={{ height: 0, opacity: 0 }}
             transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-            className="flex flex-col items-center gap-6 overflow-hidden pb-8 md:hidden"
+            className="flex flex-col items-center gap-6 overflow-hidden bg-white pb-8 md:hidden"
           >
             {navLinks.map((link) => (
               <NavLink
