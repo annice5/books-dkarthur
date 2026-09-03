@@ -4,18 +4,18 @@ import Reveal from "../../../components/reveal";
 const reviews = [
   {
     quote:
-      "A gripping tale that lingers long after the last page. Daniel Arthur has crafted something rare—a story that feels both intimate and epic.",
+      "Closure should occur at the speed of reality, not at the speed of discomfort.",
     source: "D.K. Arthur",
   },
   {
     quote:
-      "Arthur's prose is sharp, unsentimental, and quietly devastating. This is the kind of book you press into a friend's hands and say, 'You have to read this.'",
+     "Greatness is not discovered in a moment. It is formed through foundations.",
     source: "D.K. Arthur",
     showReadMore: true,
   },
   {
     quote:
-      "A masterclass in pacing and voice. Arthur writes with the confidence of someone twice his experience, and it shows on every page.",
+     "Every decision reveals the quality of the judgement behind it.",
     source: "D.K. Arthur",
   },
 ];

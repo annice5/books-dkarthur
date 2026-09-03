@@ -3,14 +3,17 @@ import { Link } from "react-router-dom";
 import latestReleaseOne from "../../../assets/latestReleaseOne.jpg";
 import latestReleaseTwo from "../../../assets/latestReleaseTwo.jpg";
 import latestReleaseThree from "../../../assets/latestReleaseThree.jpg";
+import latestReleaseFour from '../../../assets/latestReleaseFour.jpg'
 import Reveal from "../../../components/reveal";
 
 const BookCard = ({ src, alt, title, price, href, shadow = "shadow-2xl" }) => (
-  <div className="group mx-auto w-full max-w-sm">
-    <img src={src} alt={alt} className={`w-full ${shadow}`} />
+  <div className="group/card mx-auto w-full max-w-sm">
+    <div className={`aspect-[2/3] w-full bg-white ${shadow}`}>
+      <img src={src} alt={alt} className="h-full w-full object-contain" />
+    </div>
 
     <div className="relative mt-6 h-16 text-center">
-      <div className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover:opacity-0">
+      <div className="absolute inset-0 opacity-100 transition-opacity duration-300 group-hover/card:opacity-0 group-focus-within/card:opacity-0">
         <h3 className="font-serif text-base font-bold text-gray-900 sm:text-lg">
           {title}
         </h3>
@@ -21,7 +24,7 @@ const BookCard = ({ src, alt, title, price, href, shadow = "shadow-2xl" }) => (
         href={href}
         target="_blank"
         rel="noopener noreferrer"
-        className="absolute inset-0 flex items-center justify-center border border-gray-900 bg-white opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+        className="absolute inset-0 flex items-center justify-center border border-gray-900 bg-white opacity-0 transition-opacity duration-300 hover:opacity-100 focus:opacity-100 group-hover/card:opacity-100"
       >
         <span className="font-serif text-sm font-bold italic text-gray-900">
           Buy Now
@@ -51,7 +54,7 @@ const LatestReleases = () => {
           />
         </Reveal>
 
-        <Reveal delay={0.2} className="md:mt-24">
+        <Reveal delay={0.2}>
           <BookCard
             src={latestReleaseTwo}
             alt="The Making of the Exceptional Leader"
@@ -63,7 +66,7 @@ const LatestReleases = () => {
         </Reveal>
       </div>
 
-      <div className="mt-16 grid grid-cols-1 items-center gap-12 md:mt-24 md:grid-cols-2">
+      <div className="mt-16 grid grid-cols-1 gap-16 sm:ml-4 md:ml-16 md:mt-20 md:grid-cols-2 md:gap-24">
         <Reveal>
           <BookCard
             src={latestReleaseThree}
@@ -75,20 +78,15 @@ const LatestReleases = () => {
           />
         </Reveal>
 
-        <Reveal delay={0.15}>
-          <p className="font-serif text-base italic leading-relaxed text-gray-800 sm:text-lg">
-            D. K. Arthur is a writer and thinker whose work lives at the
-            intersection of philosophy, psychology, and lived experience —
-            exploring how people find clarity, judgment, and direction in real
-            life.
-          </p>
-
-          <Link
-            to="/about"
-            className="mt-6 inline-block font-body text-sm text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors"
-          >
-            About D.K. Arthur
-          </Link>
+        <Reveal>
+          <BookCard
+            src={latestReleaseFour}
+            alt="The Boy Who threw away Gold"
+            title="The Boy Who Threw Away Gold"
+            price="5.32"
+            href="https://www.amazon.com/author/d.k.arthur"
+            shadow="shadow-xl"
+          />
         </Reveal>
       </div>
     </section>

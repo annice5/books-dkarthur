@@ -23,13 +23,16 @@ const Navbar = () => {
 
   return (
     <header className="fixed inset-x-0 top-0 z-50 w-full bg-white">
-      <div className="flex items-center justify-center pt-4 pb-2 lg:pt-5 lg:pb-3">
-        <NavLink to="/" aria-label="D.K. Arthur — Home">
+      <div className="flex items-center justify-center gap-4 pt-4 pb-2 lg:gap-5 lg:pt-5 lg:pb-3">
+        <NavLink to="/" aria-label="D.K. Arthur — Home" className="flex items-center gap-4 lg:gap-5">
           <img
             src={logo}
-            alt="D.K. Arthur"
-            className="h-10 w-auto object-contain sm:h-12 lg:h-14"
+            alt=""
+            className="h-14 w-auto object-contain sm:h-16 lg:h-20"
           />
+          <span className="font-serif text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+            D.K. Arthur
+          </span>
         </NavLink>
 
         {/* Hamburger — mobile only */}

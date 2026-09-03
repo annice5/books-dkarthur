@@ -5,19 +5,15 @@ import Reveal from '../../../components/reveal'
 
 const Hero = () => {
   return (
-    <section className="mx-auto grid min-h-screen max-w-[1600px] grid-cols-1 md:grid-cols-2">
+    <section className="mx-auto grid max-w-[1600px] grid-cols-1 md:grid-cols-2 md:min-h-[700px] lg:min-h-[780px]">
       <Reveal className="order-2 flex flex-col justify-center bg-[#e7e7e4] px-6 py-16 pt-20 sm:px-8 md:order-1 md:justify-start md:px-16 md:pt-32 lg:px-20 xl:px-28">
-        <p className="font-body text-xs uppercase tracking-[0.25em] text-gray-500 sm:text-sm">
-           Welcome to The official website of
+        <p className="font-body text-sm uppercase tracking-[0.25em] text-gray-500 sm:text-base lg:text-lg">
+          Welcome to the official
+          <br />
+          website of D.K.Arthur
         </p>
 
-        <h1 className="mt-3 font-serif text-4xl font-bold leading-tight text-gray-900 sm:text-5xl md:text-7xl lg:text-8xl">
-          D.K.
-          <br />
-          Arthur
-        </h1>
-
-        <p className="mt-6 font-body max-w-sm text-base leading-relaxed text-gray-700 lg:max-w-md lg:text-lg">
+        <p className="mt-8 font-body max-w-sm text-base leading-relaxed text-gray-700 lg:mt-10 lg:max-w-md lg:text-lg">
           D.K. Arthur is an author and thinker exploring clarity, perception, judgment, and human development through the Structure of Clarity Series, the Foundations of the Great Youth — Master Edition Series, and a growing body of nonfiction and narrative works.
         </p>
 
@@ -25,7 +21,7 @@ const Hero = () => {
           href="https://www.amazon.com/author/d.k.arthur"
           className="mt-8 w-fit text-sm text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors font-body lg:text-base"
         >
-          D.K. Arthur Books
+          D.K. Arthur Books on Amazon
         </a>
       </Reveal>
 

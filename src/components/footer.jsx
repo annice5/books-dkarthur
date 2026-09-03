@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Reveal from "./reveal";
+import logo from "../assets/logo.jpg";
 
 const Footer = () => {
   const [email, setEmail] = useState("");
@@ -14,74 +15,53 @@ const Footer = () => {
   return (
     <footer className="mx-auto max-w-[1600px] bg-[#161616] px-6 py-12 text-gray-100 sm:px-8 md:px-16 md:py-16 md:pr-32 lg:px-20 lg:py-20 xl:px-28">
       <div className="grid grid-cols-1 gap-12 text-center sm:gap-14 md:grid-cols-3 md:gap-12 lg:gap-16">
-        <Reveal>
-          <p className="font-serif text-sm sm:text-base lg:text-lg">
-            For media inquiries,
-          </p>
-          <p className="font-serif text-sm sm:text-base lg:text-lg">
-            please contact agent Donna Clark
-          </p>
-          <p className="mt-6 text-sm text-gray-300 lg:text-base">
-            123-456-7890 |{" "}
-            <a
-              href="mailto:info@my-domain.com"
-              className="text-blue-300 hover:text-blue-200 break-all"
-            >
-              info@my-domain.com
-            </a>
-          </p>
-          <p className="mt-1 text-sm text-gray-300 lg:text-base">
-            500 Terry Francine Street, San Francisco
-          </p>
+
+        <Reveal className="flex items-center justify-center md:justify-start">
+          <img
+            src={logo}
+            alt="D.K. Arthur"
+            className="h-20 w-auto object-contain sm:h-24 lg:h-28"
+          />
         </Reveal>
 
-        <Reveal delay={0.12}>
-          <p className="font-serif text-sm sm:text-base lg:text-lg">
-            Sign up for news and updates
-          </p>
-          <p className="font-serif text-sm sm:text-base lg:text-lg">
-            from D.K. Arthur
-          </p>
+   <Reveal delay={0.12}>
+  <p className="font-serif text-sm sm:text-base lg:text-lg">
+    Sign up for news and updates from D.K. Arthur — Enter your email here *
+  </p>
 
-          <form
-            onSubmit={handleSubscribe}
-            className="mx-auto mt-6 max-w-xs text-left lg:max-w-sm"
-          >
-            <label
-              htmlFor="footer-email"
-              className="block text-sm lg:text-base"
-            >
-              Enter your email here *
-            </label>
-            <input
-              id="footer-email"
-              type="email"
-              required
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              className="mt-2 w-full border-b border-gray-500 bg-transparent pb-2 text-sm text-gray-100 outline-none focus:border-gray-100 lg:text-base"
-            />
+  <form
+    onSubmit={handleSubscribe}
+    className="mx-auto mt-4 max-w-xs text-left lg:max-w-sm md:mx-0"
+  >
+    <input
+      id="footer-email"
+      type="email"
+      required
+      aria-label="Enter your email here"
+      value={email}
+      onChange={(e) => setEmail(e.target.value)}
+      className="mt-2 w-full border-b border-gray-500 bg-transparent pb-2 text-sm text-gray-100 outline-none focus:border-gray-100 lg:text-base"
+    />
 
-            <label className="mt-5 flex items-start gap-2 text-sm lg:text-base">
-              <input
-                type="checkbox"
-                required
-                checked={subscribed}
-                onChange={(e) => setSubscribed(e.target.checked)}
-                className="mt-0.5 h-4 w-4 shrink-0 border-gray-500 bg-transparent"
-              />
-              Yes, subscribe me to your newsletter. *
-            </label>
+    <label className="mt-5 flex items-start gap-2 text-sm lg:text-base">
+      <input
+        type="checkbox"
+        required
+        checked={subscribed}
+        onChange={(e) => setSubscribed(e.target.checked)}
+        className="mt-0.5 h-4 w-4 shrink-0 border-gray-500 bg-transparent"
+      />
+      Yes, subscribe me to your newsletter. *
+    </label>
 
-            <button
-              type="submit"
-              className="mt-5 w-full border border-gray-100 py-2.5 text-sm hover:bg-gray-100 hover:text-gray-900 transition-colors lg:text-base"
-            >
-              Subscribe
-            </button>
-          </form>
-        </Reveal>
-
+    <button
+      type="submit"
+      className="mt-5 w-full border border-gray-100 py-2.5 text-sm hover:bg-gray-100 hover:text-gray-900 transition-colors lg:text-base"
+    >
+      Subscribe
+    </button>
+  </form>
+</Reveal>
         <Reveal delay={0.24}>
           <p className="font-serif text-sm sm:text-base lg:text-lg">
             Find more information about
@@ -109,8 +89,8 @@ const Footer = () => {
               Store Policy
             </a>
             {" | "}
-            <a
-              href="/payment-methods"
+            
+             <a href="/payment-methods"
               className="text-blue-300 hover:text-blue-200"
             >
               Payment Methods
