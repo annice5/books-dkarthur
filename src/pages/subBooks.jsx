@@ -16,104 +16,104 @@ import Reveal from "../components/reveal";
 const books = [
   {
     title: "Chaos Matter",
+    description: "A foundational look at how clarity emerges out of confusion and disorder.",
     price: "4.00",
     image: bookOne,
     slug: "chaos-matter",
-    amazonUrl:
-      "https://www.amazon.com/Chaos-Matter-Understanding-Confusion-Structure-ebook/dp/B0H59X9LHJ?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/Chaos-Matter-Understanding-Confusion-Structure-ebook/dp/B0H59X9LHJ?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "Stabillity within Change",
+    description: "How stability is maintained even as circumstances continue to shift.",
     price: "6.70",
     image: bookFive,
     slug: "stability-within-change",
-    amazonUrl:
-      "https://www.amazon.com/Stability-Within-Change-Emerges-Structure-ebook/dp/B0H5B7WM9P?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/Stability-Within-Change-Emerges-Structure-ebook/dp/B0H5B7WM9P?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "Beauty: Psychology of Influence",
+    description: "An exploration of how influence shapes perception, judgment, and human understanding.",
     price: "6.66",
     image: bookSeven,
     slug: "psychology-of-influence",
-    amazonUrl:
-      "https://www.amazon.com/BEAUTY-Psychology-Influence-Perception-Structure-ebook/dp/B0H4DP6W9V?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/BEAUTY-Psychology-Influence-Perception-Structure-ebook/dp/B0H4DP6W9V?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "The Great Forest Kingdom",
+    description: "A symbolic narrative exploring inner order, responsibility, and coherence through story rather than exposition — using metaphor to examine leadership, growth, and the work of inhabiting one's inner terrain.",
     price: "6.99",
     image: latestReleaseOne,
     slug: "the-great-forest-kingdom",
-    amazonUrl:
-      "https://www.amazon.com/GREAT-FOREST-KINGDOM-PHASES-BECOMING-ebook/dp/B0GXGM6G4M?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/GREAT-FOREST-KINGDOM-PHASES-BECOMING-ebook/dp/B0GXGM6G4M?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "The Making of The Exceptional Leader",
+    description: "Character, clarity, and responsibility at the highest levels of leadership.",
     price: "9.30",
     image: latestReleaseTwo,
     slug: "the-making-of-the-exceptional-leader",
-    amazonUrl:
-      "https://www.amazon.com/Making-Exceptional-Leader-Responsibility-Leadership-ebook/dp/B0H5YN1VB4?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/Making-Exceptional-Leader-Responsibility-Leadership-ebook/dp/B0H5YN1VB4?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "The Zeitgeist Of This Era",
+    description: "A diagnostic exploration of the emotional and perceptual conditions shaping modern life — examining how speed, visibility, and pressure quietly transform attention, judgment, and understanding.",
     price: "8.99",
     image: bookTwo,
     slug: "the-zeitgeist-of-this-era",
-    amazonUrl:
-      "https://www.amazon.com/ZEITGEIST-THIS-ERA-Understanding-Pressures-ebook/dp/B0H5TGRHLJ?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/ZEITGEIST-THIS-ERA-Understanding-Pressures-ebook/dp/B0H5TGRHLJ?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "I Didnt Know This Was Also Love",
+    description: "A reflective look at the quieter, less obvious forms love can take.",
     price: "5.35",
     image: latestReleaseThree,
     slug: "i-didnt-know-this-was-also-love",
-    amazonUrl:
-      "https://www.amazon.com/Didnt-Know-This-Also-Love-ebook/dp/B0H5MG1Y1L?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/Didnt-Know-This-Also-Love-ebook/dp/B0H5MG1Y1L?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "The Boy Who Threw Away Gold",
+    description: "A reflective narrative on value and misrecognition — tracing how something genuine can be dismissed before it is fully understood, and what is revealed only after loss has already taken place.",
     price: "5.32",
     image: latestReleaseFour,
     slug: "the-boy-who-threw-away-gold",
-    amazonUrl:
-      "https://www.amazon.com/BOY-WHO-THREW-AWAY-GOLD-ebook/dp/B0H2F1LW7G?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/BOY-WHO-THREW-AWAY-GOLD-ebook/dp/B0H2F1LW7G?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "Foundations Of The Great Youth :Master Edition- Vol 1",
+    description: "Orientation and inner foundations for identity, discipline, and emotional stability.",
     price: "8.10",
     image: bookNine,
     slug: "foundations-of-the-great-youth-vol1",
-    amazonUrl:
-      "https://www.amazon.com/Foundations-Great-Youth-Developmental-Discipline-ebook/dp/B0GXVW4NZJ?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/Foundations-Great-Youth-Developmental-Discipline-ebook/dp/B0GXVW4NZJ?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "Foundations Of The Great Youth: Master Edition -  Vol 2",
+    description: "Wellbeing, relationships, and the foundations of grounded leadership.",
     price: "8.10",
     image: bookSix,
     slug: "foundations-of-the-great-youth-vol2",
-    amazonUrl:
-      "https://www.amazon.com/Foundations-Great-Youth-Developmental-Relationships-ebook/dp/B0H1P96WQR?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/Foundations-Great-Youth-Developmental-Relationships-ebook/dp/B0H1P96WQR?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "Foundations Of The Great Youth :Master Edition - Vol 3",
+    description: "Vision, excellence, and the pursuit of meaningful contribution.",
     price: "8.10",
     image: bookFour,
     slug: "foundations-of-the-great-youth-vol3",
-    amazonUrl:
-      "https://www.amazon.com/Foundations-Great-Youth-Developmental-Responsibility-ebook/dp/B0H1NVM186?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/Foundations-Great-Youth-Developmental-Responsibility-ebook/dp/B0H1NVM186?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
   {
     title: "The Inner Compass",
+    description: "A reflective narrative following the journey of Obrenpon, exploring inner alignment, discipline, and leadership as lived experience — how individuals remain steady under pressure and sustain integrity across changing environments.",
     price: "8.14",
     image: bookThree,
     slug: "the-inner-compass",
-    amazonUrl:
-      "https://www.amazon.com/INNER-COMPASS-Story-Obrenpon-ebook/dp/B0GZYFR56H?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
+    amazonUrl: "https://www.amazon.com/INNER-COMPASS-Story-Obrenpon-ebook/dp/B0GZYFR56H?ref_=ast_author_dp_rw&th=1&psc=1&dib=eyJ2IjoiMSJ9.N1gC-gF67N2eCvoXpQsw2yrwhrl7CQRh9BSak60H1t6yWbaLVnIqEjuoXM8iSsz58cc9t4G01M5Ref8GAwJ4vyIvaENuF497iOO4uGwkxN0pH4QgydAmrB_2C9gXmuhbHq9_cNLTIRSbp7VgDRqz5MGzjyu-kZg03ZpZFwcSuLctYZn34JUXOpKQMv3WVLE1.WINLZk34OxNvIgDDDD1917HjOX-s_QEb536RVZk10RM&dib_tag=AUTHOR",
   },
 ];
 
-const BookCard = ({ title, price, image, amazonUrl }) => (
-  <div className="group mx-auto w-full max-w-xs text-center lg:max-w-sm">
+const BookCard = ({ title, description, price, image, amazonUrl }) => (
+  <div className="group mx-auto flex w-full max-w-xs flex-col text-center lg:max-w-sm">
     <div className="relative overflow-hidden shadow-2xl">
       <img src={image} alt={title} className="w-full" />
 
@@ -127,8 +127,15 @@ const BookCard = ({ title, price, image, amazonUrl }) => (
       </a>
     </div>
 
-    <p className="mt-4 text-sm text-black font-body lg:text-base">{title}</p>
-    <div className="mx-auto my-1.5 h-px w-5 bg-black" />
+    <p className="mt-4 font-serif text-base font-bold text-gray-900 lg:text-lg">
+      {title}
+    </p>
+
+    <p className="mt-2 line-clamp-3 font-body text-xs italic leading-relaxed text-gray-500 lg:text-sm">
+      {description}
+    </p>
+
+    <div className="mx-auto my-3 h-px w-5 bg-black" />
     <p className="text-sm text-gray-600 lg:text-base">${price}</p>
   </div>
 );
@@ -143,7 +150,7 @@ const SubBooks = () => {
         </h2>
       </Reveal>
 
-      <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-x-8 gap-y-12 sm:mt-16 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-16 md:grid-cols-3 lg:max-w-6xl lg:gap-x-12 lg:gap-y-20 xl:max-w-7xl">
+      <div className="mx-auto mt-12 grid max-w-5xl grid-cols-1 gap-x-8 gap-y-14 sm:mt-16 sm:grid-cols-2 sm:gap-x-10 sm:gap-y-16 md:grid-cols-3 lg:max-w-6xl lg:gap-x-12 lg:gap-y-20 xl:max-w-7xl">
         {books.map((book, index) => (
           <Reveal key={book.slug} delay={(index % 3) * 0.1} y={16}>
             <BookCard {...book} />
