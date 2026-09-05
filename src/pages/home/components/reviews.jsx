@@ -3,19 +3,16 @@ import Reveal from "../../../components/reveal";
 
 const reviews = [
   {
-    quote:
-      "Closure should occur at the speed of reality, not at the speed of discomfort.",
+    quote: "Closure should occur at the speed of reality, not at the speed of discomfort.",
     source: "D.K. Arthur",
   },
   {
-    quote:
-     "Greatness is not discovered in a moment. It is formed through foundations.",
+    quote: "Greatness is not discovered in a moment. It is formed through foundations.",
     source: "D.K. Arthur",
     showReadMore: true,
   },
   {
-    quote:
-     "Every decision reveals the quality of the judgement behind it.",
+    quote: "Every decision reveals the quality of the judgement behind it.",
     source: "D.K. Arthur",
   },
 ];
@@ -35,7 +32,7 @@ const ReviewCard = ({ quote, source, showReadMore, offset }) => (
     {showReadMore && (
       <a
         href="/reviews"
-        className="mt-6 inline-block text-sm font-body text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors lg:text-base"
+        className="mt-6 hidden text-sm font-body text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors lg:text-base md:inline-block"
       >
         Read More
       </a>
@@ -63,6 +60,16 @@ const Reviews = () => {
             />
           </Reveal>
         ))}
+      </div>
+
+      {/* Mobile-only: one Read More link, sitting below all three reviews */}
+      <div className="mt-10 text-center md:hidden">
+        <a
+          href="/reviews"
+          className="inline-block text-sm font-body text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors"
+        >
+          Read More
+        </a>
       </div>
     </section>
   );
