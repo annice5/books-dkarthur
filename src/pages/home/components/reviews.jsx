@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Reveal from "../../../components/reveal";
 
 const reviews = [
@@ -30,12 +31,12 @@ const ReviewCard = ({ quote, source, showReadMore, offset }) => (
     </p>
 
     {showReadMore && (
-      <a
-        href="/reviews"
+      <Link
+        to="/reviews"
         className="mt-6 hidden text-sm font-body text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors lg:text-base md:inline-block"
       >
         Read More
-      </a>
+      </Link>
     )}
   </div>
 );
@@ -64,12 +65,12 @@ const Reviews = () => {
 
       {/* Mobile-only: one Read More link, sitting below all three reviews */}
       <div className="mt-10 text-center md:hidden">
-        <a
-          href="/reviews"
+        <Link
+          to="/reviews"
           className="inline-block text-sm font-body text-gray-900 underline underline-offset-4 hover:text-gray-600 transition-colors"
         >
           Read More
-        </a>
+        </Link>
       </div>
     </section>
   );
