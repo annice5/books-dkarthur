@@ -24,7 +24,7 @@ const books = [
   },
   {
     title: "Stabillity within Change",
-    description: "How stability is maintained even as circumstances continue to shift.",
+    description: "How Structure Holds within Movement. A philisophical exploration of how stability emerges within a world that never stops changing. Challenging the assumption that instability is caused by changed itself, this book examines how perception, continuity, and discernmnet shape the experience of steadiness. It argues that true stability is not found in permanence, but in the capacity of structure to hold its coherence within movement.",
     price: "6.70",
     image: bookFive,
     slug: "stability-within-change",
@@ -32,7 +32,7 @@ const books = [
   },
   {
     title: "Beauty: Psychology of Influence",
-    description: "An exploration of how influence shapes perception, judgment, and human understanding.",
+    description: "How Perception Shapes What is seen and Followed. An examination of beauty, perception, trust, and influence as parts of the a single process of recognition. Moving beyond appearance, the book explores how people come to be seen, valued, trusted, and followed. It preswnts influence not as persuasion or force, but as the natural outcome of clear and stable perception.",
     price: "6.66",
     image: bookSeven,
     slug: "psychology-of-influence",
@@ -48,7 +48,7 @@ const books = [
   },
   {
     title: "The Making of The Exceptional Leader",
-    description: "Character, clarity, and responsibility at the highest levels of leadership.",
+    description: "A study of leadership at its highest level, where responsibility cannot be delegated, certainty is rarely available, and character is tested without reward. This work explores the development of judgement, discernment, and steady responsibility, examining what distinguishes exceptional leadership when pressure increases and support becomes limited.",
     price: "9.30",
     image: latestReleaseTwo,
     slug: "the-making-of-the-exceptional-leader",
@@ -64,7 +64,7 @@ const books = [
   },
   {
     title: "I Didnt Know This Was Also Love",
-    description: "A reflective look at the quieter, less obvious forms love can take.",
+    description: "Reflections on the Love we Misname. Areflective exploration of how love is often recognised only after it has already been experienced. Moving through belonging, absence, longing, care, familiarity, and acceptance, the book examines how many forms of human connection are named too narrowly, and what becomes visible when experience is given more precise attention. .",
     price: "5.35",
     image: latestReleaseThree,
     slug: "i-didnt-know-this-was-also-love",
@@ -80,7 +80,7 @@ const books = [
   },
   {
     title: "Foundations Of The Great Youth :Master Edition- Vol 1",
-    description: "Orientation and inner foundations for identity, discipline, and emotional stability.",
+    description: "The first volume of the Master Edition, establishing the foundations of identity, self-awareness, discipline, and inner stability.It provides a framework for developing a secure sense of self amid pressure, distraction, and uncertainty.",
     price: "8.10",
     image: bookNine,
     slug: "foundations-of-the-great-youth-vol1",
@@ -88,7 +88,7 @@ const books = [
   },
   {
     title: "Foundations Of The Great Youth: Master Edition -  Vol 2",
-    description: "Wellbeing, relationships, and the foundations of grounded leadership.",
+    description: "The second volume examines emotional wellbeign, healthy relationships, communication, influence, and leadership. It explores how personal stability extends outward into responsibility for others.",
     price: "8.10",
     image: bookSix,
     slug: "foundations-of-the-great-youth-vol2",
@@ -96,7 +96,7 @@ const books = [
   },
   {
     title: "Foundations Of The Great Youth :Master Edition - Vol 3",
-    description: "Vision, excellence, and the pursuit of meaningful contribution.",
+    description: "The concluding volume focuses on purpose, long-term direction, excellence, service, and contribution. It examines the movement from personal formation toward meaningful impact in the wider world.",
     price: "8.10",
     image: bookFour,
     slug: "foundations-of-the-great-youth-vol3",
@@ -123,7 +123,7 @@ const BookCard = ({ title, description, price, image, amazonUrl }) => (
         rel="noopener noreferrer"
         className="absolute inset-x-0 bottom-0 bg-white/85 py-2 text-sm text-gray-900 underline underline-offset-2 opacity-0 transition-opacity duration-300 group-hover:opacity-100 lg:text-base"
       >
-        Quick View
+        Buy Now
       </a>
     </div>
 
