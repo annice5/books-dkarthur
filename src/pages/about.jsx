@@ -60,7 +60,7 @@ const About = () => {
           </p>
 
           <p className="font-signature mt-4 text-right text-2xl text-gray-900 sm:text-3xl lg:text-4xl">
-            Arthur
+            D.K. Arthur
           </p>
         </Reveal>
       </div>

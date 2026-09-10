@@ -64,7 +64,7 @@ const books = [
   },
   {
     title: "I Didnt Know This Was Also Love",
-    description: "Reflections on the Love we Misname. Areflective exploration of how love is often recognised only after it has already been experienced. Moving through belonging, absence, longing, care, familiarity, and acceptance, the book examines how many forms of human connection are named too narrowly, and what becomes visible when experience is given more precise attention. .",
+    description: "Reflections on the Love we Misname. A reflective exploration of how love is often recognised only after it has already been experienced. Moving through belonging, absence, longing, care, familiarity, and acceptance, the book examines how many forms of human connection are named too narrowly, and what becomes visible when experience is given more precise attention. ",
     price: "5.35",
     image: latestReleaseThree,
     slug: "i-didnt-know-this-was-also-love",

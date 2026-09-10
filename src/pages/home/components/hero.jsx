@@ -38,7 +38,7 @@ const Hero = () => {
           />
 
           <p className="font-signature absolute -bottom-12 right-8 -rotate-12 text-2xl text-gray-900 sm:right-14 sm:text-3xl lg:text-4xl">
-            Arthur
+            D.K. Arthur
           </p>
         </div>
       </Reveal>

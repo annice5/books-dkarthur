@@ -30,9 +30,14 @@ const Navbar = () => {
             alt=""
             className="h-14 w-auto object-contain sm:h-16 lg:h-20"
           />
-          <span className="font-serif text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
-            D.K. Arthur
-          </span>
+          <div className="flex flex-col leading-tight">
+            <span className="font-serif text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl lg:text-5xl">
+              D.K. Arthur
+            </span>
+            <span className="font-body text-[10px] uppercase tracking-[0.25em] text-gray-500 sm:text-xs lg:text-sm">
+              Writer · Thinker · Mentor
+            </span>
+          </div>
         </NavLink>
 
         {/* Hamburger — mobile only */}
