@@ -84,14 +84,57 @@ const profiles = [
   {
     slug: 'foundations-of-the-great-youth',
     title: 'Foundations of the Great Youth — Master Edition',
-    subtitle: 'A Developmental Framework for Identity, Responsibility, and Direction',
-    hook: 'Growth is not becoming someone else. It is becoming more accurately yourself.',
-    overview: 'Foundations of the Great Youth provides a structured framework for identity formation, responsibility, emotional stability, leadership, excellence, and contribution.',
-    why: 'Young people face increasing complexity but are often given fragmented guidance. This work provides an integrated developmental structure that can be revisited across different stages of life.',
-    audience: ['Young people', 'Parents', 'Educators', 'Mentors', 'Youth leaders'],
-    themes: ['Identity', 'Responsibility', 'Discipline', 'Leadership', 'Purpose', 'Contribution'],
-    related: ['The Making of the Exceptional Leader', 'The Inner Compass', 'Foundations of Clarity'],
-    threadText: 'Explore leadership where responsibility cannot be deferred.',
+    subtitle: 'The Developmental System',
+    hook: 'Growth does not begin with achievement. It begins with position.',
+    overview: 'Foundations of the Great Youth — Master Edition is a developmental system examining identity, wellbeing, leadership, responsibility, excellence, and contribution across three interconnected volumes. The series is not structured as a collection of lessons, nor as three independent books. It is designed as a single developmental progression that moves from internal formation to external responsibility and sustained contribution. Each volume establishes conditions for the next. Together, they explore how individuals develop the strength required to remain aligned within themselves before attempting to influence anything beyond themselves.',
+    why: 'Guidance must evolve alongside the conditions young people are required to navigate. The Master Edition exists to establish strength, clarity, and responsibility at the level of the self before those qualities are tested by relationships, leadership, pressure, ambition, and long-term responsibility.',
+    audience: ['Young people', 'Parents', 'Mentors', 'Educators', 'Youth leaders', 'Anyone interested in personal formation and development'],
+    themes: ['Identity', 'Responsibility', 'Self-awareness', 'Leadership', 'Discipline', 'Purpose', 'Excellence', 'Contribution'],
+    seriesProgression: [
+      'Volume I → Orientation & Inner Foundations',
+      'Volume II → Wellbeing, Relationships & Leadership',
+      'Volume III → Vision, Excellence & Contribution',
+    ],
+    threadText: 'Begin where all development begins: position.',
+    threadTarget: 'foundations-of-the-great-youth-vol1',
+  },
+  {
+    slug: 'foundations-of-the-great-youth-vol1',
+    title: 'Orientation & Inner Foundations',
+    subtitle: 'Foundations of the Great Youth, Volume I',
+    hook: 'Before direction comes position. Before responsibility comes awareness.',
+    overview: 'The first volume of the Master Edition focuses on identity, self-awareness, discipline, internal stability, and personal formation. Rather than beginning with ambition, goals, or achievement, the work begins with position. It explores how individuals come to understand themselves, recognise internal patterns, establish healthy foundations, and develop the awareness required for sustainable growth.',
+    why: 'Many developmental systems begin by asking young people where they want to go. This volume begins with a different question: Who is the person who intends to go there? The work exists to strengthen the foundations upon which future responsibility, leadership, and contribution will eventually rest.',
+    audience: ['Young people seeking direction', 'Parents supporting development', 'Educators and mentors', 'Readers interested in identity and personal growth'],
+    themes: ['Identity', 'Self-awareness', 'Discipline', 'Formation', 'Inner Stability', 'Alignment'],
+    related: ['Wellbeing, Relationships & Leadership', 'Foundations of Clarity', 'The Inner Compass'],
+    threadText: 'Explore what happens when inner development encounters relationships, influence, and responsibility.',
+    threadTarget: 'foundations-of-the-great-youth-vol2',
+  },
+  {
+    slug: 'foundations-of-the-great-youth-vol2',
+    title: 'Wellbeing, Relationships & Leadership',
+    subtitle: 'Foundations of the Great Youth, Volume II',
+    hook: 'Strength is tested where life becomes shared.',
+    overview: 'The second volume introduces relationship, influence, interaction, leadership, wellbeing, and the external pressures that challenge internal stability. What has been established within Volume I is now tested against other people, changing environments, competing influences, and increasing responsibility.',
+    why: 'Development does not occur in isolation. Character, wellbeing, and leadership reveal themselves most clearly in relation to others. This volume explores how internal formation remains stable while navigating external demands.',
+    audience: ['Young people entering greater responsibility', 'Mentors and youth leaders', 'Educators', 'Readers interested in leadership and wellbeing'],
+    themes: ['Wellbeing', 'Relationships', 'Leadership', 'Influence', 'Responsibility', 'Emotional Stability'],
+    related: ['Orientation & Inner Foundations', 'Vision, Excellence & Contribution', 'The Making of the Exceptional Leader', 'Beauty: Psychology of Influence'],
+    threadText: 'Explore the movement from personal development to purpose, excellence, and contribution.',
+    threadTarget: 'foundations-of-the-great-youth-vol3',
+  },
+  {
+    slug: 'foundations-of-the-great-youth-vol3',
+    title: 'Vision, Excellence & Contribution',
+    subtitle: 'Foundations of the Great Youth, Volume III',
+    hook: 'Development reaches maturity when it becomes responsibility.',
+    overview: 'The final volume extends outward into direction, purpose, excellence, contribution, and long-term responsibility. Building on the foundations established in the earlier volumes, the work examines how individuals position themselves within a wider field of consequence and contribution.',
+    why: 'Personal growth is not an end in itself. The purpose of formation is not self-improvement alone, but the development of individuals capable of carrying responsibility, serving others, and contributing meaningfully over time.',
+    audience: ['Emerging leaders', 'Young professionals', 'Mentors and educators', 'Readers interested in purpose and contribution'],
+    themes: ['Vision', 'Excellence', 'Responsibility', 'Purpose', 'Contribution', 'Long-Term Development'],
+    related: ['Wellbeing, Relationships & Leadership', 'The Making of the Exceptional Leader', 'The Cost of Leadership', 'Foundations of Clarity'],
+    threadText: 'Explore responsibility where certainty ends and judgment begins.',
     threadTarget: 'the-making-of-the-exceptional-leader',
   },
   {
@@ -424,14 +467,14 @@ const ProfileItem = ({ profile, isOpen, onToggle, onJump, itemRef }) => (
             </p>
 
             <h4 className="mt-6 font-body text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
-              Why This Book Exists
+              {profile.seriesProgression ? 'Why This Series Exists' : 'Why This Book Exists'}
             </h4>
             <p className="mt-2 font-body text-sm leading-relaxed text-gray-700 sm:text-base">
               {profile.why}
             </p>
 
             <h4 className="mt-6 font-body text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
-              Who This Book Is For
+              {profile.seriesProgression ? 'Who This Series Is For' : 'Who This Book Is For'}
             </h4>
             <ul className="mt-2 space-y-1">
               {profile.audience.map((a) => (
@@ -455,16 +498,35 @@ const ProfileItem = ({ profile, isOpen, onToggle, onJump, itemRef }) => (
               ))}
             </div>
 
-            <h4 className="mt-6 font-body text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
-              Related Works
-            </h4>
-            <ul className="mt-2 space-y-1">
-              {profile.related.map((r) => (
-                <li key={r} className="font-body text-sm text-gray-700 sm:text-base">
-                  {r}
-                </li>
-              ))}
-            </ul>
+            {profile.seriesProgression && (
+              <>
+                <h4 className="mt-6 font-body text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
+                  Series Progression
+                </h4>
+                <ul className="mt-2 space-y-1">
+                  {profile.seriesProgression.map((s) => (
+                    <li key={s} className="font-body text-sm text-gray-700 sm:text-base">
+                      {s}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+
+            {profile.related && (
+              <>
+                <h4 className="mt-6 font-body text-xs font-bold uppercase tracking-[0.15em] text-gray-500">
+                  Related Works
+                </h4>
+                <ul className="mt-2 space-y-1">
+                  {profile.related.map((r) => (
+                    <li key={r} className="font-body text-sm text-gray-700 sm:text-base">
+                      {r}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
 
             <div className="mt-8 border-t border-gray-100 pt-6">
               <p className="font-body text-sm italic text-gray-500">
