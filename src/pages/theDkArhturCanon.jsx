@@ -100,7 +100,7 @@ const profiles = [
   },
   {
     slug: 'foundations-of-the-great-youth-vol1',
-    title: ' Foundations Of The Great Youth VOLUME I',
+    title: ' Foundations Of The Great Youth - VOLUME I',
     subtitle: 'Orientation & Inner Foundations',
     hook: 'Before direction comes position. Before responsibility comes awareness.',
     overview: 'The first volume of the Master Edition focuses on identity, self-awareness, discipline, internal stability, and personal formation. Rather than beginning with ambition, goals, or achievement, the work begins with position. It explores how individuals come to understand themselves, recognise internal patterns, establish healthy foundations, and develop the awareness required for sustainable growth.',
@@ -113,7 +113,7 @@ const profiles = [
   },
   {
     slug: 'foundations-of-the-great-youth-vol2',
-    title: ' Foundations Of The Great Youth VOLUME II ',
+    title: ' Foundations Of The Great Youth - VOLUME II ',
     subtitle: 'Wellbeing, Relationships & Leadership',
     hook: 'Strength is tested where life becomes shared.',
     overview: 'The second volume introduces relationship, influence, interaction, leadership, wellbeing, and the external pressures that challenge internal stability. What has been established within Volume I is now tested against other people, changing environments, competing influences, and increasing responsibility.',
@@ -126,7 +126,7 @@ const profiles = [
   },
   {
     slug: 'foundations-of-the-great-youth-vol3',
-    title: ' Foundations Of The Great Youth VOLUME III ',
+    title: ' Foundations Of The Great Youth - VOLUME III ',
     subtitle: 'Vision, Excellence & Contribution',
     hook: 'Development reaches maturity when it becomes responsibility.',
     overview: 'The final volume extends outward into direction, purpose, excellence, contribution, and long-term responsibility. Building on the foundations established in the earlier volumes, the work examines how individuals position themselves within a wider field of consequence and contribution.',
