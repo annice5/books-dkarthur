@@ -91,17 +91,17 @@ const profiles = [
     audience: ['Young people', 'Parents', 'Mentors', 'Educators', 'Youth leaders', 'Anyone interested in personal formation and development'],
     themes: ['Identity', 'Responsibility', 'Self-awareness', 'Leadership', 'Discipline', 'Purpose', 'Excellence', 'Contribution'],
     seriesProgression: [
-      'Volume I → Orientation & Inner Foundations',
-      'Volume II → Wellbeing, Relationships & Leadership',
-      'Volume III → Vision, Excellence & Contribution',
+      'Volume I → Foundations Of The Great Youth - Orientation & Inner Foundations',
+      'Volume II → Foundations Of The Great Youth - Wellbeing, Relationships & Leadership',
+      'Volume III → Foundations Of The Great Youth - Vision, Excellence & Contribution',
     ],
     threadText: 'Begin where all development begins: position.',
     threadTarget: 'foundations-of-the-great-youth-vol1',
   },
   {
     slug: 'foundations-of-the-great-youth-vol1',
-    title: 'Orientation & Inner Foundations',
-    subtitle: 'Foundations of the Great Youth, Volume I',
+    title: ' Foundations Of The Great Youth VOLUME I',
+    subtitle: 'Orientation & Inner Foundations',
     hook: 'Before direction comes position. Before responsibility comes awareness.',
     overview: 'The first volume of the Master Edition focuses on identity, self-awareness, discipline, internal stability, and personal formation. Rather than beginning with ambition, goals, or achievement, the work begins with position. It explores how individuals come to understand themselves, recognise internal patterns, establish healthy foundations, and develop the awareness required for sustainable growth.',
     why: 'Many developmental systems begin by asking young people where they want to go. This volume begins with a different question: Who is the person who intends to go there? The work exists to strengthen the foundations upon which future responsibility, leadership, and contribution will eventually rest.',
@@ -113,8 +113,8 @@ const profiles = [
   },
   {
     slug: 'foundations-of-the-great-youth-vol2',
-    title: 'Wellbeing, Relationships & Leadership',
-    subtitle: 'Foundations of the Great Youth, Volume II',
+    title: ' Foundations Of The Great Youth VOLUME II ',
+    subtitle: 'Wellbeing, Relationships & Leadership',
     hook: 'Strength is tested where life becomes shared.',
     overview: 'The second volume introduces relationship, influence, interaction, leadership, wellbeing, and the external pressures that challenge internal stability. What has been established within Volume I is now tested against other people, changing environments, competing influences, and increasing responsibility.',
     why: 'Development does not occur in isolation. Character, wellbeing, and leadership reveal themselves most clearly in relation to others. This volume explores how internal formation remains stable while navigating external demands.',
@@ -126,8 +126,8 @@ const profiles = [
   },
   {
     slug: 'foundations-of-the-great-youth-vol3',
-    title: 'Vision, Excellence & Contribution',
-    subtitle: 'Foundations of the Great Youth, Volume III',
+    title: ' Foundations Of The Great Youth VOLUME III ',
+    subtitle: 'Vision, Excellence & Contribution',
     hook: 'Development reaches maturity when it becomes responsibility.',
     overview: 'The final volume extends outward into direction, purpose, excellence, contribution, and long-term responsibility. Building on the foundations established in the earlier volumes, the work examines how individuals position themselves within a wider field of consequence and contribution.',
     why: 'Personal growth is not an end in itself. The purpose of formation is not self-improvement alone, but the development of individuals capable of carrying responsibility, serving others, and contributing meaningfully over time.',
@@ -565,7 +565,7 @@ const TheDkArthurCanon = () => {
     if (el) {
       const timer = setTimeout(() => {
         el.scrollIntoView({ behavior: 'smooth', block: 'start' })
-      }, 80)
+      }, 400)
       return () => clearTimeout(timer)
     }
   }, [openSlug])
